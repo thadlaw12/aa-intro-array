@@ -1,0 +1,27 @@
+/*
+Define a function called minVal that takes in an array of numbers as a
+parameter. The function should return the smallest number of the array. If the
+array is empty, the function should return null.
+*/
+/*
+1. define function called minVal
+2. takes in an array 
+3. return smalled number of array 
+4. if array is empty return null
+*/
+function minVal(arr){
+    let min = 0;
+    if(arr.length === 0){
+        return null;
+    } else {
+       min = Math.min(...arr)
+    } return min;
+}
+
+
+// console.log(minVal([4, 6, 3, 5, 2, 4])); // 2
+// console.log(minVal([-2, -3, -7, 3 ]));   // -7
+// console.log(minVal([])); //null
+
+/******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
+module.exports = minVal;
